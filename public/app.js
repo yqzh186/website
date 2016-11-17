@@ -5,34 +5,31 @@ videojs("video").ready(function(){
     var player = this;
 
     player.on('loadeddata',function(){
-        console.log("加载数据");
     })
 
     // 检测播放时间
     player.on('timeupdate', function () {
-        // console.log('当前播放时间：=', player.currentTime());
     });
 
     // 开始或恢复播放
     player.on('play', function() {
-        console.log('开始/恢复播放');
     });
 
     player.on('ended',function(){
         loopMode = looperNnumber % 3
 
         if ( loopMode == 0 ){
-            player.src({ type: 'video/mp4', src: 'videos/blurry.mov' });
+            player.src({ type: 'video/mp4', src: 'http://ogrmjs8hr.bkt.clouddn.com/blurry.mov' });
             player.play();
         }
         if ( loopMode == 1 || loopMode == 2 ){
-            player.src({ type: 'video/mp4', src: 'videos/clear.mov' });
+            player.src({ type: 'video/mp4', src: 'http://ogrmjs8hr.bkt.clouddn.com/clear.mov' });
             player.play();
         }
         looperNnumber++;
     })
 
-    player.src({ type: 'video/mp4', src: 'videos/clear.mov' });
+    player.src({ type: 'video/mp4', src: 'http://ogrmjs8hr.bkt.clouddn.com/clear.mov' });
     player.play();
 });
 var video_content=document.getElementById('video_content');
@@ -47,6 +44,6 @@ download_btn.onclick=function () {
     }
 };
 video_content.onclick=function(){
-        qrcode.style.display='none';
+     qrcode.style.display='none';
 }
 
