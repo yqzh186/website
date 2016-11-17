@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+}
+.video-js {
+    width: 100% !important;
+    height: 100% !important;
+}
+.div-relative{
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    color: gray;
+    border:0 solid #000;
+
+    width: 100% !important;
+    height: 100% !important;
+}
+.div-video{
+    position:absolute;
+    z-index:10;
+    background: white;
+    width: 100% !important;
+    height: 100% !important;
+}
+.div-top-logo{
+    margin: 0 auto;
+    top: 30; left: 0; right: 0; bottom: 0;
+    overflow: auto;
+
+    position:absolute;
+    z-index:100;
+    width:400px;
+    height:200px
+}
+.div-middle-buttons{
+    margin: auto;
+    top: 0;left: 0; right: 0; bottom: 0;
+    overflow: auto;
+
+    position:absolute;
+    z-index:100;
+    /*background: blue;*/
+    width:600px;
+    height:90px
+}
+#div-download-button{
+    text-align:center;
+    margin: auto;
+    top: 0;left: 0; right: 0; bottom: 0;
+    overflow: auto;
+
+    position:absolute;
+    z-index:100;
+    color:#fff;
+    background:url('static/button-bg.png') no-repeat;
+    width: 234px;
+    height: 34px;
+}
+.div-bottom-text{
+    margin: 0 auto;
+    left: 0; right: 0; bottom: 20;
+    overflow: auto;
+
+    position:absolute;
+    z-index:100;
+    width:300px;
+    height:150px
+}
+#div-bottom-large-text{
+    text-align:center;
+    margin:0 auto;
+    top: 20; left: 0; right: 0; bottom: 0;
+    overflow: auto;
+    font-size: 28px;
+    position:absolute;
+    z-index:100;
+    color: white;
+    height:30px
+}
+#div-bottom-small-text1{
+    text-align:center;
+    margin:0 auto;
+    top: 60px; left: 0; right: 0; bottom: 0;
+    overflow: auto;
+    font-family: Georgia,Times, TimesNR, 'New Century Schoolbook', 'New York', serif;
+    position:absolute;
+    z-index:100;
+    color: rgb(248, 248, 248);
+    height:20px
+}
+#div-bottom-small-text2{
+    text-align:center;
+    margin:0 auto;
+    top: 80px; left: 0; right: 0; bottom: 0;
+    overflow: auto;
+    font-family: NSimSun,Georgia,Times, TimesNR, 'New Century Schoolbook', 'New York', serif;
+    position:absolute;
+    z-index:100;
+    color: rgb(248, 248, 248);
+    height:20px
+}
+#qrcode{
+    width:120px;
+    height:120px;
+    background:#fff;
+    border:2px solid yellow;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:30px;
+    margin-left:-60px;
+    z-index: 200;
+    display: none;
+}
+.div-middle-buttons span{
+    display: inline-block;
+    margin-top:6px;
+}
+.div-middle-buttons i{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+
+}
